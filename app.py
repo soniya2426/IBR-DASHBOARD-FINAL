@@ -55,7 +55,7 @@ def load_bundled_or_ask():
     ask the user to upload from the sidebar.
     """
     default_el = "data/estee_lauder-dataset_50.xlsx"
-    default_sh = "data/shiffa_synthetic_dataset 50.xlsx"  # note the space
+    default_sh = "data/shiffa_synthetic_dataset_50.xlsx"  # note the space
     have_defaults = os.path.exists(default_el) and os.path.exists(default_sh)
     if have_defaults:
         el = pd.read_excel(default_el, engine="openpyxl")
